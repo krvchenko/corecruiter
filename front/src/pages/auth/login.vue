@@ -118,6 +118,9 @@ export default {
       position: absolute;
       z-index: 1;
       animation: dots 2s ease-in-out infinite alternate-reverse;
+      @include mq('620px', max) {
+        display: none;
+      }
       @keyframes dots {
         0% {
           transform: translateY(0);

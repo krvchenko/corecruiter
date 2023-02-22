@@ -119,6 +119,9 @@ export default {
     min-width: 384px;
     position: relative;
     z-index: 5;
+    @include mq('laptop', max) {
+      min-width: 320px;
+    }
     &__group {
       margin-bottom: 22px;
     }
